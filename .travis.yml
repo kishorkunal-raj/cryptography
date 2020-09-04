@@ -190,6 +190,11 @@ matrix:
           env: DOWNSTREAM=pyopenssl
           arch: ppc64le
 
+before_install:
+  - |
+    if [[ "${TRAVIS_CPU_ARCH}" == "ppc64le" ]]; then
+        apt-get install -y python
+    fi
 install:
     - ./.travis/install.sh
 
