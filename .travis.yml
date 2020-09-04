@@ -139,54 +139,54 @@ matrix:
           env: TOXENV=py27 OPENSSL=1.1.1g
         - python: 3.8
           env: TOXENV=py38 OPENSSL=1.1.1g
-	- arch: ppc64le
-	  python: 2.7
+        - arch: ppc64le
+          python:2.7
           services: docker
           env: TOXENV=py27 DOCKER=pyca/cryptography-runner-centos8
-	- arch: ppc64le
-	  python: 2.7
+        - arch: ppc64le
+          python:2.7
           services: docker
           env: TOXENV=py27 DOCKER=pyca/cryptography-runner-stretch
         - arch: ppc64le
-	  python: 2.7
+          python: 2.7
           services: docker
           env: TOXENV=py27 DOCKER=pyca/cryptography-runner-ubuntu-rolling
-	- arch: ppc64le
-	  python: 3.8
-	  env: DOWNSTREAM=pyopenssl
-	- arch: ppc64le
-	  python: 3.8
+        - arch: ppc64le
+          python: 3.8
+          env: DOWNSTREAM=pyopenssl
+        - arch: ppc64le
+          python: 3.8
           env: TOXENV=py38 LIBRESSL=3.2.0
-	- arch: ppc64le
-	  python: 3.8
+        - arch: ppc64le
+          python: 3.8
           services: docker
           env: TOXENV=py38 DOCKER=pyca/cryptography-runner-bullseye
         - arch: ppc64le
-	  python: 3.8
+          python: 3.8
           services: docker
           env: TOXENV=py38 DOCKER=pyca/cryptography-runner-sid
         - arch: ppc64le
-	  python: 3.8
+          python: 3.8
           services: docker
           env: TOXENV=py38 DOCKER=pyca/cryptography-runner-ubuntu-focal
         - arch: ppc64le
-	  python: 3.8
+          python: 3.8
           services: docker
           env: TOXENV=py38 DOCKER=pyca/cryptography-runner-ubuntu-rolling
         - arch: ppc64le
-	  python: 3.8
+          python: 3.8
           services: docker
           env: TOXENV=py38-randomorder DOCKER=pyca/cryptography-runner-ubuntu-rolling
         - arch: ppc64le
-	  python: 3.8
+          python: 3.8
           services: docker
           env: TOXENV=py38 DOCKER=pyca/cryptography-runner-fedora
         - arch: ppc64le
-	  python: 3.8
+          python: 3.8
           services: docker
           env: TOXENV=py38 DOCKER=pyca/cryptography-runner-alpine:latest
-	- arch: ppc64le
-	  python: 3.8
+        - arch: ppc64le
+          python: 3.8
           env: DOWNSTREAM=pyopenssl
 
 install:
